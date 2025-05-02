@@ -20,7 +20,7 @@ label start:
 
     # These display lines of dialogue.
 
-    e "python ;-;"
+    e "python!"
 
     e "Once you add a story, pictures, and music, you can release it to the world!"
 
