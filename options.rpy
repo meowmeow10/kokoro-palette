@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("standard VN")
+define config.name = _("Project Kita")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -23,20 +23,20 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "DEV"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
-define gui.about = _p("""food :)""")
+define gui.about = _p("""Development Build. Do not distribute to unauthorized third parties, or your cat.""")
 
 
 ## A short name for the game used for executables and directories in the built
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "standardVN-main"
+define build.name = "kita-development"
 
 
 ## Sounds and music ############################################################
