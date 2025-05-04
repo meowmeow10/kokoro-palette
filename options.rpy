@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("Project Kita")
+define config.name = _("Kokoro Palette")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -29,23 +29,15 @@ define config.version = "DEV"
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
-<<<<<<< HEAD
+
 define gui.about = _p("""Development Build. Do not distribute to unauthorized third parties, or your cat.""")
-=======
-define gui.about = _p("""
-""")
->>>>>>> c812548d4a5fdbbf254fc914e3bd22b644f8f102
 
 
 ## A short name for the game used for executables and directories in the built
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-<<<<<<< HEAD
-define build.name = "kita-development"
-=======
-define build.name = "ProjectKita"
->>>>>>> c812548d4a5fdbbf254fc914e3bd22b644f8f102
+define build.name = "KokoroPalette"
 
 
 ## Sounds and music ############################################################
@@ -151,7 +143,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "ProjectKita-1746199544"
+define config.save_directory = "KokoroPalette"
 
 
 ## Icon ########################################################################
