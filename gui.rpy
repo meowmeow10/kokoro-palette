@@ -15,14 +15,7 @@ init python:
 define config.check_conflicting_properties = True
 
 label splashscreen:
-    scene black
-    with Pause(1)
-
-    show text "Team Sakura - Internal Build - Not Release Ready." with dissolve
-    with Pause(2)
-
-    hide text with dissolve
-    with Pause(1)
+    $ renpy.movie_cutscene('/images/splashscreen.mp4')
     return 
 
 
