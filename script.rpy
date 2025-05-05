@@ -11,11 +11,13 @@ define it = Character ("Itsuki")
 # Declare variables used. $ indicates Ren'py will treat it like Python 3.11.
 $ skipped_class = 0
 $ basement_skip = 0
+$ force_feed = 0
 
 
 
 
 # The game starts here.
+
 
 label start:
     
@@ -89,8 +91,8 @@ label start:
     label skipclass:
     scene hallway 1 with wipeleft
     show tsukiko with dissolve
-    ts "Well, Ayaka went to class with Sensei. I'm hiding from the staff who prey on kids who skip classes."
-    ts "I bet Ayaka is bored as hell, listening to Sensei go on about the Americans fighting each other."
+    ts "Well, Ayaka-chan went to class with Sensei. I'm hiding from the staff who prey on kids who skip classes."
+    ts "I bet Ayaka-chan is bored as hell, listening to Sensei go on about the Americans fighting each other."
     ts "Well, as Midterms are coming up, maybe I could go to the Libary and study..."
     ts "But I might get caught, and get a Detention..."
     ts "Well, there is only half an hour left of class. Maybe I could get away with it!"
@@ -189,11 +191,11 @@ label lunch:
         ts "Scarred me for life, really-"
         ay "And uhh... Well, my skirt-"
         it "I get it, I get it."
-        it "I don't want to know what Tsukiko saw." (multiple = 2)
-        ts "You really don't." (multiple = 2)
-        ay "Anyway, Itsuki, do you want to join us in the Libary for studying after school?"
+        it "I don't want to know what Tsukiko-chan saw."
+        ts "You really don't."
+        ay "Anyway, Itsuki-kun, do you want to join us in the Libary for studying after school?"
         it "I won't have time at home, so I guess I should."
-        ts "Thats our Itsuki!"
+        ts "Thats our Itsuki-kun!"
         ay "If you are late, I am going to force feed you YOUR lunch tomorrow" with vpunch
         it "I won't be late!"
         ts "Famous last words!"
@@ -206,13 +208,136 @@ label lunch:
         ay "Guys! Move it, or we will all be late!"
 
         label class2:
+        scene classroom sunset
+        "2:30 PM - Mathematics - School"
+        show tsukiko at left with dissolve
+        ts "Ugh, I hate math..."
+        ts "When in later life am I going to need to know how to find a volume of a cylinder?"
+        ts "I mean, I guess if I want to be a plumber, but I don't want to be a plumber!"
+        ts "I want to be cafe owner!"
+        ts "I mean, I guess I could be a cafe owner and a plumber, but that would be a bit weird."
+        ts "Welcome to Tsukiko's Cafe! Can I get you started on coffee or a toilet flush?"
+        ts "What would I even serve in that cafe? Omlette Rice and Drain Cleaner?"
+        ts "Sushi and a Plunger?"
+        show itsuki at right with moveinright
+        it "What are you waffling on about?"
+        ts "Huh!"
+        ts "Oh, nothing..."
+        it "So, whats a Omlette Rice and Drain Cleaner special today?"
+        ts "Hey! Don't insult my bored brain!"
+        it "Anyway, Sensei is going to start shouting at you if you don't pay attention."
+        ts "What are we doing again?"
+        it "Calulating volumes. Now, pay attention!"
+        ts "But, Itsuki-senpai... When am I actually gonna need this in later life>?"
+        it "Don't call me that!"
+        ts "But senpai-"
+        it "I will throw you out the the nearest window if you call me that again!"
+        ts "Sorry, Itsuki-kun..."
+        it "Just pay attention!"
+        ts "Fine..."
+    label libary1:
+        scene libary with dissolve
+        "3:30 PM - Libary - School"
+        show tsukiko at left with dissolve
+        show ayaka at center with dissolve
+        ts "Well, here we are."
+        ay "Itsuki-kun is late like always."
+        ts "Does that mean you are going to force feed him his lunch tomorrow?"
+        ay "Of course!"
+        ts "You had better wear trousers!"
+        ay "Don't even go there!" with hpunch
+        ts "Alright, I get it."
+        show itsuki at right with moveinright
+        ts "Oh, look who finally decided to show up!"
+        it "Hey, I needed a piss!"
+        ts "You should look at Bladder Expansion Surgery!"
+        it "I don't want doctors poking around that area!"
+        ts "Not that there is anything to poke around anyway!"
+        it "Don't you even-"
+        ay "Can you guys stop talking about that?"
+        ay "It's really weird, and this is a public space!"
+        ay "If you want to talk about that, go to the basement or something."
+        ay "Itsuki-kun..."
+        it "Yes?"
+        ay "How much water do you drink a day?"
+        it "About 2-3 litres, I guess."
+        ts "That's a lot of water"
+        ts "I drink one of those 500ml bottles a day."
+        it "That's not enough!"
+        ts "But, there is a fine line between drinking enough and drinking too much!"
+        ay "Can you guys just shut up and study!"
+        ts "Sorry, Ayaka-chan..."
+        it "She started it!"
+        ay "I don't care who started it! Just shut up and study!" with vpunch
+        it "I get the point."
+        ay "Also, I'm force feeding you your lunch tomorrow."
+        it "W-why?"
+        ay "Because you were late!"
+        "And so, the three of them studied until sundown, when Ayaka-chan realized the time."
+        ay "Oh no! It's 5:30! The school closes at 6! We had better get going!"
+        hide ayaka with moveoutright
+        hide tsukiko with moveoutleft
+        hide itsuki with moveoutright
+    label tsukikoroom1:
+        scene apartment night
+        "6:00 PM - Tsukiko's Room - Tsukiko's House"
+        ts "Well, that was a day..."
+        ts "And there is still 4 more days of this week left..."
+        ts "Tomorrow will be funny, though."
+        ts "There is no way that Ayaka-chan will let him off the hook. She will feed him."
+        ts "And since we can use phones at break, I am so gonna record it!"
+        # phone buzz sound here when audio ready.
+        ts "Oh, it's Itsuki-kun."
+        "Can you please convince Ayaka-chan to not feed me? Some guy will record it and post it on Z or something. I can't afford to become the class clown!"
+        ts "Huh."
+        "But you already are the class clown!"
+        ts "heh."
+        # phone buzz sound here when audio ready.
+        "DON'T EVEN GO THERE YOU %$@#@!"
+        ts "Wow, someone is feeling feisty today!"
+        ts "But, should I convice Ayaka-chan to not feed him?"
+        ts "Should I message her and tell her not to do it?"
+        menu:
+            "I wanna see him get fed!":
+                $ force_feed = 1
+                ts "I so can't miss out on this!"
+                
+                jump tsukikoroom2
+            "I should tell her not to do it." :
+                $ force_feed = 0 # make sure this is set to 0 incase it gets tripped somehow
+                ts "I guess I should tell her not to do it."
+                ts "After all, I don't want to see him become an outcast."
+                "Hey, Ayaka-chan! Please don't feed Itsuki-kun tomorrow!"
+                "He will become a social outcast if you do!"
+
+                jump tsukikoroom2
+    label tsukikoroom2:
+        ts "Well I had better go make instant ramen for dinner."
+        ts "Most kids who go to study end up eating microwave meals or such, since they miss dinner."
+        ts "Hopefully, Ayaka-chan doesn't lose track of time again tomorrow. Then I can have real food!"
+        ts "To the kitchen!"
+    label kitchen1:
+        scene kitchen 1
+        show tsukiko at center with dissolve
+        ts "Huh, I wonder if we have run out..."
+        ts "I hope not, because I can't be bothered to go to the store."
+        ts "I could order something, but I could also wait until tomorrow."
+        ts "Ayaka-chan would also get mad at me if I didn't eat, though."
+        ts "Nah, I will just eat something tomorrow."
+        ts "I'm sure it will be fine."
         
 
 
+                       
 
 
-    # This ends the game.
-    return
+
+
+
+
+        
+
+
 
 
 

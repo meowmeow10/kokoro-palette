@@ -14,6 +14,13 @@ init python:
 ## Enable checks for invalid or unstable properties in screens or transforms
 define config.check_conflicting_properties = True
 
+label splashscreen: 
+
+    $ renpy.movie_cutscene('/images/intro.ogv')
+
+    return
+
+
 ################################################################################
 ## GUI Configuration Variables
 ################################################################################
