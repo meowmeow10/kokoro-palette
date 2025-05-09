@@ -228,7 +228,7 @@ label lunch:
         it "Anyway, Sensei is going to start shouting at you if you don't pay attention."
         ts "What are we doing again?"
         it "Calulating volumes. Now, pay attention!"
-        ts "But, Itsuki-senpai... When am I actually gonna need this in later life>?"
+        ts "But, Itsuki-senpai... When am I actually gonna need this in later life?"
         it "Don't call me that!"
         ts "But senpai-"
         it "I will throw you out the the nearest window if you call me that again!"
@@ -281,6 +281,7 @@ label lunch:
     label tsukikoroom1:
         scene apartment night
         "6:00 PM - Tsukiko's Room - Tsukiko's House"
+        show tsukiko at center with dissolve
         ts "Well, that was a day..."
         ts "And there is still 4 more days of this week left..."
         ts "Tomorrow will be funny, though."
@@ -293,7 +294,7 @@ label lunch:
         "But you already are the class clown!"
         ts "heh."
         # phone buzz sound here when audio ready.
-        "DON'T EVEN GO THERE YOU %$@#@!"
+        "DON'T EVEN GO THERE YOU %#@#@!"
         ts "Wow, someone is feeling feisty today!"
         ts "But, should I convice Ayaka-chan to not feed him?"
         ts "Should I message her and tell her not to do it?"
@@ -325,6 +326,11 @@ label lunch:
         ts "Ayaka-chan would also get mad at me if I didn't eat, though."
         ts "Nah, I will just eat something tomorrow."
         ts "I'm sure it will be fine."
+    label day2start:
+        scene classroom board morning
+        "Tuesday - 10AM - Science - School"
+        show tsukiko at left with dissolve
+        ts "Ok, it's got interesting now!"
         
 
 
